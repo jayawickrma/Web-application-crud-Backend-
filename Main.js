@@ -7,7 +7,7 @@ $('#savepost').click(function () {
     console.log(postid,posttitle,posttext,postcntnt);
 
     $.ajax({
-        url:"http://localhost:8080/blog/savestudent",
+        url:"http://localhost:8080/student/savestudent",
         method:"POST",
         contentType:"application/json",
             "data":JSON.stringify({
@@ -36,7 +36,7 @@ $('#updatePost').click(function () {
     console.log(postid, posttitle, posttext, postcntnt);
 
     $.ajax({
-        url: "http://localhost:8080/blog/updatestudent",
+        url: "http://localhost:8080/student/updatestudent",
         method: "PUT",
         contentType: "application/json",
         "data": JSON.stringify({
@@ -65,7 +65,7 @@ $('#deletePost').click(function () {
     console.log(postid, posttitle, posttext, postcntnt);
 
     $.ajax({
-        url: "http://localhost:8080/blog/deletestudent",
+        url: "http://localhost:8080/student/deletestudent",
         method: "DELETE",
         contentType: "application/json",
         "data": JSON.stringify({
